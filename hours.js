@@ -85,21 +85,24 @@ function modal(e) {
   var submitButton = document.querySelector(".btn__group #submit");
 
   submitButton.addEventListener("click", (e) => {
-    var taskObj;
-    var taskList = localStorage.getItem("memory");
-    if (taskList) {
-      taskObj = JSON.parse(taskList);
-    } else {
-      taskObj = [];
+    var work = document.querySelector("#work");
+    var project = document.querySelector("#project");
+    var workValue = work.value;
+    var projectValue = project.value;
+    if (workValue.trim() && projectValue.trim()) {
+      console.log(workValue, projectValue);
+      var task = localStorage.getItem("memory");
+      if (task == null) {
+        taskobj = [];
+      } else {
+        taskobj = JSON.parse(task);
+      }
+      taskobj.push({ work: work.value, project: project.value, ul: parent });
+      console.log(taskobj);
+      localStorage.setItem("memory", JSON.stringify(taskobj));
+      work.value = "";
+      project.value = "";
     }
-    var work = document.querySelector(".modal__body>#work");
-    var project = document.querySelector(".modal__body>#project");
-    taskObj.push({ work: work.value, project: project.value, ul: parent });
-    work.value = "";
-    project.value = "";
-    localStorage.setItem("memory", JSON.stringify(taskObj));
-    console.log(localStorage.getItem("memory"));
-    console.log(e.target.parentNode.parentNode.parentNode);
     showData();
   });
 }
@@ -108,21 +111,20 @@ function showData() {
   var ulList = document.querySelectorAll("#week__div>ul");
 
   for (let i in taskObj) {
-    let output = `<div class="data">
-                        <p>${taskObj[i].work}</p>
-                        <p>${taskObj[i].project}
-                        </div>`;
-
     for (let j in ulList) {
+      let output;
       if (taskObj[i].ul === ulList[j].id) {
-        console.log(i);
+        output = `<div class="data">
+        <p>${taskObj[i].work}</p>
+        <p>${taskObj[i].project}
+        </div>`;
         document.querySelector(
           `#${ulList[j].id}>li:nth-child(6)`
         ).innerHTML = output;
       }
     }
   }
-  var daytask;
+  var daytask = "";
   for (i in taskObj) {
     if (taskObj[i].work) {
       daytask += `<div class="data">
@@ -140,7 +142,7 @@ function deleteData(work) {
   let newList = todolist.filter((item) => {
     return item.work !== work;
   });
-  localStorage.removeItem("memory");
+  localStorage.clear();
   localStorage.setItem("memory", JSON.stringify(newList));
   showData();
 }
