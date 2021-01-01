@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hours</title>
+    <link href="../fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"> 
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="../fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet"> 
+
     <link rel="stylesheet" href="hours.css" />
   </head>
   <body>
@@ -45,16 +49,14 @@
         </ul>
         <ul>
           <li>
-            <i class="fa fa-user"></i>
-            <p>PEOPLE</p>
+            <a href="workspace.html"><i class="fa fa-cog "></i></a>
+            <!-- <p>PEOPLE</p> -->
           </li>
+        
           <li>
-            <i class="fa fa-bar-chart"></i>
-            <p>REPORTS</p>
-          </li>
-          <li>
-            <i class="fa fa-file-text"></i>
-            <p>PLANING</p>
+            <i class="fas fa-user-circle fa-3x"></i>
+            
+            
           </li>
         </ul>
       </div>
@@ -63,9 +65,10 @@
           <div class="button_group">
             <button class="day" id="day">Day</button>
             <button class="week" id="week">Week</button>
+            <button class="month" id="month">Month</button>
           </div>
           <div class="date__time">
-            <button>back</button>
+            <button><</button>
             <input
               type="text"
               name="date"
@@ -75,16 +78,16 @@
               onfocus="(this.type='date')"
             />
 
-            <button>forward</button>
+            <button>></button>
           </div>
           <div class="button">
             <button><i class="fa fa-tree"></i></button>
           </div>
-          <h2>0h-rs0</h2>
+          <h2></h2>
           <div class="company">
             <div class="button_group">
-              <button class="company">company</button>
-              <button class="solo">solo</button>
+              <button class="company">Company</button>
+              <button class="solo">Solo</button>
             </div>
           </div>
         </div>
@@ -248,8 +251,8 @@
           <div class="month__div" id="month__div"></div>
           <div class="day__div" id="day__div">
             <div class="day__task">
-              <p>
-                All the task <button id="clearLocalStorage">Clear all</button>
+              <p >
+                All the task <button id="clearLocalStorage"><i class="fas fa-backspace fa-2x"></i></button>
               </p>
               <div class="day__task__list"></div>
             </div>
@@ -272,7 +275,7 @@
             type="text"
             name="project"
             id="project"
-            placeholder="Your project"
+            placeholder="Select your project"
           />
           <hr />
           <div class="information">
@@ -285,7 +288,7 @@
           </div>
           <div class="information">
             <div class="green"></div>
-            <p>memory <span>(Rohan Kumar Baranwal)</span></p>
+            <p>Memory <span>(Rohan Kumar Baranwal)</span></p>
           </div>
         </div>
         <div class="btn__group">
