@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+/*
+  *
+  *
+  *
+  LEFT SIDE SECTION OF THE DASHBORAD PAGE
+  */
+.container__left__tabs {
+  width: 20%;
+  max-width: 80px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #53626e;
+  height: 100vh;
+}
+.container__left__tabs ul {
+  width: 90%;
+  padding: 2px 4px;
+  margin: auto;
+}
+.container__left__tabs img {
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.container__left__tabs hr {
+  width: 40%;
+  margin: auto;
+  background-color: white;
+}
+.container__left__tabs ul > li {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 25px;
+  transition: 0.2s all ease-in-out;
+}
+.container__left__tabs a {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.fa-user {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.container__left__tabs .fa {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.container__left__tabs ul:nth-child(2) {
+  margin-top: 7rem;
+}
+.container__left__tabs ul:nth-child(2) > li > .fa {
+  font-size: 25px;
+}
+.container__left__tabs li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+/*
+  LEFT SIDE OF THE DASHBOARD ENDS HERE
+  */
+.container__right {
+  width: 100vw;
+}
+.container__right__header {
+  background-color: #eef1f2;
+  padding: 0 80px;
+  padding-bottom: 40px;
+}
+
+.header_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.container__right__header h2 {
+  font-size: 2rem;
+  color: rgb(82, 79, 79);
+}
+.flex > div {
+  height: 40px;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  margin-left: 10px;
+}
+.flex .name {
+  width: 150px;
+  line-height: 40px;
+}
+.flex .manage__teams {
+  width: 150px;
+  line-height: 40px;
+}
+.flex .user {
+  background-color: rgb(109, 201, 109);
+  color: white;
+  width: 100px;
+  line-height: 40px;
+}
+.dashboard,
+.all_user,
+.activities {
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  margin-top: 40px;
+  background-color: grey;
+}
+
+.container__right__body {
+  width: 90%;
+  position: relative;
+  background-color: white;
+  height: 600px;
+  margin: 20px 80px;
+}
+.dashboard__div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.image__box1,
+.image__box2 {
+  width: 100%;
+  height: 200px;
+  margin-top: 60px;
+}
+.dashboard__div img {
+  height: 200px;
+  width: 100%;
+}
+select {
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  font-size: 1rem;
+  border: none;
+}
