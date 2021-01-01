@@ -371,8 +371,11 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
   border-radius: 3px;
   font-size: 1.1rem;
   z-index: 2;
+  padding: 10px 4px 20px;
 }
-
+.data > p {
+  margin-bottom: 10px;
+}
 #day__div > .day__task > p {
   display: flex;
   justify-content: space-between;
