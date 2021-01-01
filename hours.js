@@ -114,7 +114,7 @@ function showData() {
     for (let j in ulList) {
       let output;
       if (taskObj[i].ul === ulList[j].id) {
-        output = `<div class="data">
+        output = `<div class="data1">
         <p>${taskObj[i].work}</p>
         <p>${taskObj[i].project}
         </div>`;
@@ -128,10 +128,13 @@ function showData() {
   for (i in taskObj) {
     if (taskObj[i].work) {
       daytask += `<div class="data">
-                    
-                        <p>${taskObj[i].work}<br>
-                        ${taskObj[i].project}</p>
-                        <button onclick="deleteData('${taskObj[i].work}')">Delete </button>
+                        <div>
+                        <p>${taskObj[i].work}</p>
+                        <p>${taskObj[i].project}</p>
+                        
+                        </div>
+                        
+                        <button onclick="deleteData('${taskObj[i].work}')"id="delete_data">Delete </button>
                         </div>`;
     }
   }
