@@ -9,6 +9,9 @@
   width: 100vw;
   overflow: hidden;
 }
+body {
+  font-family: sans-serif;
+}
 /*
 *
 *
@@ -109,6 +112,7 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
 }
 .month {
   border-left: 0;
+  /* text-transform: uppercase; */
 }
 .date__time > button,
 .date__time > input {
@@ -150,7 +154,9 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
   box-shadow: 0 0 8px rgb(196, 192, 192);
   min-height: 80px;
 }
-
+#date{
+  text-align: center;
+}
 .container__right__body > .month__div {
   width: 95%;
   height: 90vh;
@@ -168,12 +174,14 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
 }
 .month__div > div {
   flex-basis: 20%;
-  height: 100px;
+  height: 110px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(173, 173, 173);
+  text-transform: uppercase;
+  /* margin-right: 0.5px; */
 }
 .container__right__body > .day__div {
-  width: 50%;
+  width: 39%;
   height: 90vh;
   background-color: white;
   position: absolute;
@@ -184,6 +192,17 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
   margin-left: 40px;
   padding: 10px 20px;
   visibility: hidden;
+}
+.fa-backspace {
+  color: red;
+  /* width: 100px; */
+}
+#clearLocalStorage {
+  border: none;
+  background-color: white;
+}
+.day__task p{
+  font-family: sans-serif;
 }
 .day__div .task {
   background-color: blue;
@@ -253,7 +272,7 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
 }
 /*
 *
-*
+*data
 *
 */
 /*  MODAL SECTION */
@@ -364,19 +383,54 @@ LEFT SIDE OF THE DASHBOARD ENDS HERE
   align-items: center;
 }
 .data {
-  background-color: rgb(13, 142, 216);
-  color: antiquewhite;
-  padding-left: 4px;
+  background-color: rgb(71, 177, 124);;
+  color: white;
+  width: 300px;
+  height: 80px;
+  padding: 4px;
   margin-top: 10px;
   border-radius: 3px;
-  font-size: 1.1rem;
-  z-index: 2;
-  padding: 10px 4px 20px;
+  font-size: 15px;
+  display: flex;
+  border-radius: 5px;
+  /* z-index: 2; */
 }
-.data > p {
-  margin-bottom: 10px;
+.data1 {
+  background-color: rgb(71, 177, 124);;
+  color: white;
+  width: 200px;
+  height: 80px;
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  /* display: flex; */
+  border-radius: 5px;
 }
+.data1  p {
+  /* margin-bottom: 5px; */
+  padding-bottom: 5px;
+}
+.data div p  {
+
+  margin-bottom: 5px;
+  padding: 10px;
+}
+#delete_data {
+  background-color: white;
+  margin-left: 100px;
+  border: none;
+  height: 30px;
+  width: 60px;
+  border-radius: 30px;
+  margin-top: 13px;
+  /* border: 1px solid red; */
+}
+
 #day__div > .day__task > p {
   display: flex;
   justify-content: space-between;
 }
+/* .day__task {
+  border: 1px solid red;
+} */
