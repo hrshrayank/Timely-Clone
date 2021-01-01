@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: sans-serif;
+  color: #64657e;
+  background-color: #fff;
+}
 .header {
   background-color: #cfd3fd;
 }
@@ -10,21 +15,44 @@
   width: 70%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  /* border: 1px solid red; */
 
   padding-top: 20px;
-  z-index: 4;
+  /* z-index: 4; */
 }
 .navlinks {
-  width: 80%;
+  width: 1000px;
+  /* border: 1px solid red; */
+  margin-left: 100px;
+  height: 60px;
 }
 .navlinks > ul {
   display: flex;
   justify-content: space-around;
-  width: 60%;
-  align-items: center;
-  margin: auto;
+  padding: 5px;
+  /* color: #64657e; */
+ 
+  /* width: 60%; */
+  /* align-items: center; */
+  /* margin: auto; */
+}
+.button {
+  padding: 10px;
+}
+.navlinks > ul:nth-child(7){
+  padding: 0;
+  
+}
+.btn_nav {
+  background-color: #00d68c;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  height: 40px;
+  padding: 0 10px;
+
 }
 li {
   list-style: none;
@@ -85,7 +113,7 @@ li {
   margin: 20px 0;
   font-size: 2.2rem;
   font-weight: 700;
-  color: rgb(56, 54, 54);
+  /* color: rgb(56, 54, 54); */
 }
 .writing__box > p {
   margin-bottom: 20px;
@@ -118,6 +146,7 @@ li {
 }
 .description {
   text-align: center;
+  /* color: #64657e; */
   padding: 10px;
 }
 .description h2 {
@@ -129,9 +158,10 @@ li {
   font-size: 1.3rem;
 }
 .middle__title {
+  padding-top: 20px;
   text-align: center;
-  color: rgb(58, 56, 56);
-  font-size: 3rem;
+  /* color: rgb(58, 56, 56); */
+  font-size:38px;
   margin: 30px;
 }
 .big__container {
@@ -157,13 +187,13 @@ li {
 }
 .big__writing > p {
   line-height: 2.2rem;
-  color: rgb(65, 63, 63);
+  /* color: rgb(65, 63, 63); */
   font-weight: 600;
   font-style: italic;
 }
 .big__writing > .black {
   margin-top: 20px;
-  color: rgb(31, 30, 30);
+  /* color: rgb(31, 30, 30); */
   font-size: 1.2rem;
   font-weight: 400px;
   font-style: normal;
@@ -171,7 +201,9 @@ li {
 .footer {
   width: 100%;
   margin: 30px 0 0;
-  background-color: rgb(230, 227, 227);
+  /* background-color: rgb(230, 227, 227); */
+  border-top: 1px solid grey;
+  
   padding-top: 40px;
 }
 .footer_table {
