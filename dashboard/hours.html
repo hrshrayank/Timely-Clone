@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hours</title>
+   
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+    <link rel="stylesheet" href="hours.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__left__tabs">
+        <ul>
+          <li>
+            <img
+              src="https://d1vbcromo72rmd.cloudfront.net/assets/account_thumbs/account_medium_retina-10dfbcc6733ccba1d485971f63c5eb7f9b7ed1a942a0ebd140e292bcb1e4dbea.png"
+              alt=""
+            />
+          </li>
+          <hr />
+          <li>
+            <a href=""><i class="fa fa-clock-o"></i></a>
+            <p>HOURS</p>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-briefcase"></i></a>
+            <p>PROJECTS</p>
+          </li>
+          <li>
+            <a href="people.html"><i class="fa fa-user"></i></a>
+            <p>PEOPLE</p>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-bar-chart"></i></a>
+            <p>REPORTS</p>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-file-text"></i></a>
+
+            <p>PLANING</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="../components/workspace.html"><i class="fa fa-cog "></i></a>
+            <!-- <p>PEOPLE</p> -->
+          </li>
+        
+          <li>
+            <a href="../index.html"> <i class="fa fa-user-circle fa-3x"></i></a>
+           
+            
+            
+          </li>
+        </ul>
+      </div>
+      <div class="container__right">
+        <div class="container__right__header">
+          <div class="button_group">
+            <button class="day" id="day">Day</button>
+            <button class="week" id="week">Week</button>
+            <button class="month" id="month">Month</button>
+          </div>
+          <div class="date__time">
+            <button><</button>
+            <input
+              type="text"
+              name="date"
+              id="date"
+              placeholder="rohan"
+              onblur="(this.type='text')"
+              onfocus="(this.type='date')"
+            />
+
+            <button>></button>
+          </div>
+          <div class="button">
+            <button><i class="fa fa-tree"></i></button>
+          </div>
+          <h2></h2>
+          <div class="company">
+            <div class="button_group">
+              <button class="company">Company</button>
+              <button class="solo">Solo</button>
+            </div>
+          </div>
+        </div>
+        <div class="container__right__body">
+          <div class="table" id="week__div">
+            <ul id="ul-1">
+              <li>
+                <p class="grey">Sun,27th</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul id="ul-2">
+              <li>
+                <p class="grey">Mon,28th</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul id="ul-3">
+              <li>
+                <p class="grey">Tue,29th</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul id="ul-4">
+              <li>
+                <p class="grey">Wed,30th</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul id="ul-5">
+              <li>
+                <p class="grey">Today,31st</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul id="ul-6">
+              <li>
+                <p class="grey">Fri,1st</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul id="ul-7">
+              <li>
+                <p class="grey">Sat,2nd</p>
+                <p class="black">0h</p>
+                <i class="fa fa-tree"></i>
+              </li>
+              <li>
+                <div class="box__on__hover">+</div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="month__div" id="month__div"></div>
+          <div class="day__div" id="day__div">
+            <div class="day__task">
+              <p >
+                All the task <button id="clearLocalStorage"> <i class="fa fa-window-close" aria-hidden="true"></i></button>
+              </p>
+              <div class="day__task__list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="month" id="month"></div>
+    <div class="modal__bg">
+      <div class="modal__outer">
+        <div class="modal__body">
+          <input
+            type="text"
+            name="work"
+            id="work"
+            placeholder="What did you work on ?"
+          />
+          <hr />
+          <input
+            type="text"
+            name="project"
+            id="project"
+            placeholder="Select your project"
+          />
+          <hr />
+          <div class="information">
+            <div class="green"></div>
+            <p>General <span>(Rohan Kumar Baranwal)</span></p>
+          </div>
+          <div class="information">
+            <div class="blue"></div>
+            <p>Communication <span>(Rohan Kumar Baranwal)</span></p>
+          </div>
+          <div class="information">
+            <div class="green"></div>
+            <p>Memory <span>(Rohan Kumar Baranwal)</span></p>
+          </div>
+        </div>
+        <div class="btn__group">
+          <button type="submit" id="submit">Submit</button>
+          <button type="submit" id="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="hours.js"></script>
+  </body>
+</html>

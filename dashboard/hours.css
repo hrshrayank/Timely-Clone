@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+body {
+  font-family: sans-serif;
+}
+/*
+*
+*
+*
+LEFT SIDE SECTION OF THE DASHBORAD PAGE
+*/
+
+.container__left__tabs {
+  width: 20%;
+  max-width: 80px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #53626e;
+  height: 100vh;
+}
+.container__left__tabs ul {
+  width: 90%;
+  padding: 2px 4px;
+  margin: auto;
+}
+.container__left__tabs img {
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.container__left__tabs hr {
+  width: 40%;
+  margin: auto;
+  background-color: white;
+}
+.container__left__tabs ul > li {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 25px;
+  transition: 0.2s all ease-in-out;
+}
+.container__left__tabs a {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.fa-clock-o {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.container__left__tabs .fa {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.container__left__tabs ul:nth-child(2) {
+  margin-top: 7rem;
+}
+.container__left__tabs ul:nth-child(2) > li > .fa {
+  font-size: 25px;
+}
+.container__left__tabs li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+/*
+LEFT SIDE OF THE DASHBOARD ENDS HERE
+*/
+
+/* Head OF THE RIGHT PART */
+.container__right {
+  width: 100vw;
+  background-color: #eef1f2;
+}
+.container__right__header {
+  display: flex;
+  padding: 0 30px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+.button_group {
+  display: flex;
+  align-items: baseline;
+}
+.button_group > button {
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border: none;
+}
+.button_group > .week,
+.button_group > .company {
+  width: 80px;
+  height: 40px;
+  background-color: #4f5e69;
+  border-radius: 4px;
+  color: white;
+}
+
+.day {
+  border-right: 0;
+}
+.month {
+  border-left: 0;
+  /* text-transform: uppercase; */
+}
+.date__time > button,
+.date__time > input {
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+.date__time > input {
+  width: 150px;
+  padding: 0 4px;
+}
+.container__right__header .button > button {
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+}
+.container__right__header h2 {
+  width: 40%;
+  text-align: center;
+}
+/*
+*
+*
+*/
+/* TABLE PART OF TH RIGHT SIDE */
+.container__right__body {
+  position: relative;
+}
+.container__right__body > .table {
+  background: white;
+  display: flex;
+  margin: 10px 30px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgb(196, 192, 192);
+  min-height: 80px;
+}
+#date{
+  text-align: center;
+}
+.container__right__body > .month__div {
+  width: 95%;
+  height: 90vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  visibility: hidden;
+}
+.month__div > div {
+  flex-basis: 20%;
+  height: 110px;
+  padding: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  text-transform: uppercase;
+  /* margin-right: 0.5px; */
+}
+.container__right__body > .day__div {
+  width: 39%;
+  height: 90vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  padding: 10px 20px;
+  visibility: hidden;
+}
+.fa-backspace {
+  color: red;
+  /* width: 100px; */
+}
+#clearLocalStorage {
+  border: none;
+  background-color: white;
+}
+.day__task p{
+  font-family: sans-serif;
+}
+.day__div .task {
+  background-color: blue;
+  margin-top: 20px;
+  height: 50px;
+  color: white;
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+.container__right__body ul {
+  flex-basis: 14%;
+  min-height: 750px;
+  border-left: 1px solid rgb(238, 231, 231);
+  background: white;
+  padding: 0 10px;
+  position: relative;
+}
+.container__right__body > .table:first-child {
+  border-left: 0;
+}
+.container__right__body ul > li {
+  border-bottom: 1px solid rgb(233, 228, 228);
+  list-style: none;
+  height: 48px;
+}
+
+.container__right__body ul > li:nth-child(1) {
+  height: 70px;
+  padding: 10px;
+}
+.table .black {
+  color: #53626e;
+  font-weight: 600;
+}
+.table .grey {
+  color: grey;
+  font-weight: 600;
+}
+.table .fa-tree {
+  font-size: 16px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.table p {
+  margin-bottom: 8px;
+}
+.box__on__hover {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  background-color: rgb(175, 168, 168);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  opacity: 0;
+}
+.table ul:hover .box__on__hover {
+  opacity: 1;
+}
+/*
+*
+*data
+*
+*/
+/*  MODAL SECTION */
+.color {
+  color: rgb(247, 242, 242);
+}
+.modal__bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+.modal__outer {
+  width: 500px;
+  height: 500px;
+  background-color: #eef1f2;
+  padding: 10px;
+}
+.modal__body {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 20px;
+}
+.modal__body > input {
+  width: 100%;
+  display: inline-block;
+  height: 60px;
+  padding: 10px 12px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+.modal__body > input:focus {
+  border: none;
+}
+.modal__body > hr {
+  width: 95%;
+  margin: auto;
+}
+.modal__body input::placeholder {
+  font-size: 1.1rem;
+  padding-left: 15px;
+  font-weight: 500;
+}
+.information {
+  margin: 20px 10px;
+  display: flex;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: rgb(46, 105, 182);
+}
+.green,
+.blue {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.information > p {
+  color: rgb(48, 47, 47);
+  font-size: 1.1rem;
+}
+.information > p > span {
+  color: grey;
+}
+.modal__outer > .btn__group {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.btn__group > button {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  border: none;
+}
+.btn__group > button:nth-child(1) {
+  background-color: rgb(108, 214, 108);
+  color: whitesmoke;
+}
+.btn__group > button:nth-child(2) {
+  background-color: white;
+  color: rgb(58, 57, 57);
+}
+.show_box {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data {
+  background-color: rgb(71, 177, 124);;
+  color: white;
+  width: 300px;
+  height: 80px;
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  display: flex;
+  border-radius: 5px;
+  /* z-index: 2; */
+}
+.data1 {
+  background-color: rgb(71, 177, 124);;
+  color: white;
+  width: 200px;
+  height: 80px;
+  padding: 4px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  /* display: flex; */
+  border-radius: 5px;
+}
+.data1  p {
+  /* margin-bottom: 5px; */
+  padding-bottom: 5px;
+}
+.data div p  {
+
+  margin-bottom: 5px;
+  padding: 10px;
+}
+#delete_data {
+  background-color: white;
+  margin-left: 100px;
+  border: none;
+  height: 30px;
+  width: 60px;
+  border-radius: 30px;
+  margin-top: 13px;
+  /* border: 1px solid red; */
+}
+
+#day__div > .day__task > p {
+  display: flex;
+  justify-content: space-between;
+}
+/* .day__task {
+  border: 1px solid red;
+} */

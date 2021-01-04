@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: #cfd3fd;
+  }
+  .navbar {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* border: 1px solid red; */
+  
+    padding-top: 20px;
+    /* z-index: 4; */
+  }
+  .navlinks {
+    width: 1000px;
+    /* border: 1px solid red; */
+    margin-left: 100px;
+    height: 60px;
+  }
+  .navlinks > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    /* color: #64657e; */
+   
+    /* width: 60%; */
+    /* align-items: center; */
+    /* margin: auto; */
+  }
+  .button {
+    padding: 10px;
+  }
+  .navlinks > ul:nth-child(7){
+    padding: 0;
+    
+  }
+  .btn_nav {
+    background-color: #00d68c;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    height: 40px;
+    padding: 0 10px;
+  
+  }
+  li {
+    list-style: none;
+  }
+  .navlinks a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+  }
+  .image__box {
+    margin: auto;
+    width: 80%;
+    padding: 240px 0 20px;
+    background: url("https://assets.website-files.com/5db165cbf782f992df567ae5/5efee520c083b7d15d9be515_recrtangle_bg.svg");
+    height: 70vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .image__box > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(58, 56, 56, 0.7);
+    margin-bottom: 20px;
+  }
+  .image__box > p {
+    font-size: 1.5rem;
+    color: rgb(49, 48, 48);
+    width: 50%;
+    margin: auto;
+    line-height: 2rem;
+  }
+  .flex_layout {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto 60px;
+  }
+  
+  .flex_layout .flex_box {
+    width: calc(50% - 60px);
+    min-width: 200px;
+    margin-top: 30px;
+    margin: 30px 30px;
+    box-shadow: 0px 0px 10px rgb(187, 182, 182);
+    flex-grow: 1;
+    position: relative;
+    border-radius: 5px;
+    padding: 1px;
+  }
+  
+  .flex_layout > .flex_box > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .flex_layout > .flex_box > p,
+  .flex_layout h1 {
+    margin: 20px 20px;
+  }
+  .textbox {
+    margin: 20px 20px;
+  }
+  .case_Study {
+    color: rgb(255, 166, 0);
+  }
+  .flex_layout h1 {
+    font-size: 2.3rem;
+    color: rgb(53, 52, 52);
+  }
+  .textbox {
+    font-size: 1.3rem;
+    color: grey;
+  }
+  /* .modal__bg {
+    position: fixed;
+    width: 10%;
+    height: 90vh;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s all ease-in-out;
+  } */
+  .modal__outer {
+    position: fixed;
+    width: 300px;
+    height: 80vh;
+    top: 20px;
+    right: 0;
+    color: whitesmoke;
+    box-shadow: 0 0 1px rgb(95, 94, 94);
+    visibility: hidden;
+  }
+  .modal__body {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 20px;
+  }
+  .text {
+    background-color: rgb(1, 4, 44);
+    padding: 20px;
+  }
+  .text h1 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+  .text p {
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+  }
+  .modal__form {
+    margin-top: -20px;
+    padding: top 20px;
+  }
+  .modal__body {
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(202, 199, 199);
+  }
+  .modal__form input {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 2px rgb(66, 65, 65);
+    padding: 4px 10px;
+  }
+  .modal__form textarea {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0 0 2px rgb(66, 65, 65);
+    padding: 10px;
+  }
+  .btn__group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn__group button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+  }
+  .input::placeholder {
+    padding: 10px;
+  }
+  .float__button {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    padding: 20px;
+    background-color: rgb(1, 4, 44);
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgb(163, 161, 161);
+  }
+  .fa-comment {
+    font-size: 2rem;
+    color: white;
+  }
